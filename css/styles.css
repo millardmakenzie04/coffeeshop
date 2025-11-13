@@ -17,12 +17,11 @@
 body {
     font-size: 1.1em;
     font-family: Arial, Helvetica, sans-serif;
-	background-color: white;
+	background-image:url("coffee.jpg");
 }
-
 #container {
     width: 930px;
-    border-width: 1px;
+    border-width: 2px;
     margin: 0 auto;
     background-color: white;
 }
@@ -54,7 +53,7 @@ nav ul {
 
 nav ul li a {
     padding: 5px;
-    color: gray;
+    color: #52341e;
     text-decoration: none;
     display:block;
 }
@@ -104,21 +103,23 @@ h2 {
     font-size: 1.4em;
     text-align: center;
     padding-bottom: 0.5em;
+	color: #52341e;
 }
 
 h3 {
     text-align: center;
     padding-bottom: 0.5em;
     padding-top: 0.5em;
+	color:#52341e; 
 }
 
 footer {
     width: 910px;
     margin: 0;
     padding: 10px;
-    background-color: gray;
+    background-color: #52341e;
     clear: both;
-    color: wheat;
+    color: #ffffff;
     font-weight: bold;
     text-align: center;
 	border-bottom-left-radius: 25px;
@@ -144,4 +145,37 @@ footer a:visited {
 
 footer a:hover {
     text-decoration: underline;
+}
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
 }
